@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Subtitle = () => {
+const Subtitle = ({ children }) => {
     return (
-        <div>Subtitle</div>
+        <div>{children}</div>
     )
 }
 

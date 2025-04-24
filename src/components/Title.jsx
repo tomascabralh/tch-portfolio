@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Title = () => {
+const Title = ({ children }) => {
     return (
-        <div>Title</div>
+        <div className='text-[40px]'>
+            {children}
+        </div>
     )
 }
 
