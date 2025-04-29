@@ -3,7 +3,7 @@ import React from 'react'
 const ProjectCard = ({ title, imageUrl, skills, codeUrl, liveUrl }) => {
     return (
         <div>
-            <img src={imageUrl} alt={title} className='w-full rounded' />
+            <img src={imageUrl} alt={title} className='w-full lg:max-w-[545px] md:h-[250px] lg:h-[400px] rounded' />
             <div className='mb-5'>
                 <h1 className='text-[24px] mt-5 mb-1'>{title}</h1>
                 <h2 className='flex'>{skills.map((skill, index) => (

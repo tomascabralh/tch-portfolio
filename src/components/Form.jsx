@@ -1,6 +1,6 @@
 export default function Form() {
     return (
-        <form className="flex flex-col gap-6 w-full border-b pb-[90px] border-gray-700">
+        <form className="flex flex-col gap-6 w-full">
             <input type="text" placeholder="Name" className="bg-transparent border-b border-gray-600 py-2 outline-none" />
             <input type="email" placeholder="Email" className="bg-transparent border-b border-gray-600 py-2 outline-none" />
             <textarea placeholder="Message" rows="4" className="bg-transparent border-b border-gray-600 py-2 outline-none" />

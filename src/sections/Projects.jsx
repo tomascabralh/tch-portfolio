@@ -19,9 +19,9 @@ const projectsData = [
 
 export default function Projects() {
     return (
-        <section className="px-4 py-20">
+        <section className="px-4 py-20 lg:mx-[160px]">
             <div className="flex justify-between items-center mb-10">
-                <h2 className="text-[40px] font-bold">Projects</h2>
+                <h2 className="text-[40px] md:text-[72px] font-bold">Projects</h2>
                 <a href="#contact" className="text-base border-b border-[#4EE1A0]">CONTACT ME</a>
             </div>
             <div className="grid gap-8 md:grid-cols-2">

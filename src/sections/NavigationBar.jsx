@@ -3,7 +3,7 @@ import React from 'react'
 const NavigationBar = ({ backgroundColor }) => {
     const isGrey = backgroundColor === 'grey';
     return (
-        <nav className={`flex flex-col md:flex-row md:justify-between justify-center items-center py-6 px-4 ${isGrey && 'bg-[#242424]'}`}>
+        <nav className={`flex flex-col md:flex-row md:justify-between justify-center items-center py-6 px-4 lg:px-[160px] ${isGrey && 'bg-[#242424]'}`}>
             <p className="text-[24px] font-bold pb-[20px] md:pb-0">tomascabral</p>
             <div className="flex gap-x-[25px] z-10">
                 <a href="https://github.com/tomascabralh" target='_blank' aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
