@@ -1,25 +1,31 @@
 import ProjectCard from "../components/ProjectCard";
 
-const projects = [
+const projectsData = [
     {
-        title: "Design Portfolio",
-        tech: ["HTML", "CSS"],
-        image: "/project1.png",
-        code: "#",
-        live: "#",
+        title: "LA NACION",
+        skills: ["HTML", "CSS"],
+        imageUrl: "/images/ln.png",
+        codeUrl: null,
+        liveUrl: "www.lanacion.com",
     },
-    // add more...
+    {
+        title: "INDICIUS",
+        skills: ["HTML", "CSS"],
+        imageUrl: "/images/indicius.png",
+        codeUrl: null,
+        liveUrl: "www.indicius.com",
+    }
 ];
 
 export default function Projects() {
     return (
         <section className="px-4 py-20">
             <div className="flex justify-between items-center mb-10">
-                <h2 className="text-3xl font-bold">Projects</h2>
-                <a href="#contact" className="text-base border-b border-green-400">CONTACT ME</a>
+                <h2 className="text-[40px] font-bold">Projects</h2>
+                <a href="#contact" className="text-base border-b border-[#4EE1A0]">CONTACT ME</a>
             </div>
-            <div className="grid gap-10 md:grid-cols-2">
-                {projects.map((project, index) => (
+            <div className="grid gap-8 md:grid-cols-2">
+                {projectsData.map((project, index) => (
                     <ProjectCard key={index} {...project} />
                 ))}
             </div>

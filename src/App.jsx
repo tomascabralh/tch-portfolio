@@ -5,16 +5,15 @@ import Projects from './sections/Projects'
 import Skills from './sections/Skills'
 import Contact from './sections/Contact'
 import NavigationBar from './sections/NavigationBar'
-
+import Header from './sections/Header'
 function App() {
   return (
     <>
-      <NavigationBar />
-      <Hero />
+      <Header />
       <Skills />
       <Projects />
       <Contact />
-      <NavigationBar />
+      <NavigationBar backgroundColor='grey' />
     </>
   )
 }

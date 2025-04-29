@@ -1,12 +1,15 @@
 export default function Form() {
     return (
-        <form className="flex flex-col gap-6 max-w-xl">
+        <form className="flex flex-col gap-6 w-full border-b pb-[90px] border-gray-700">
             <input type="text" placeholder="Name" className="bg-transparent border-b border-gray-600 py-2 outline-none" />
             <input type="email" placeholder="Email" className="bg-transparent border-b border-gray-600 py-2 outline-none" />
             <textarea placeholder="Message" rows="4" className="bg-transparent border-b border-gray-600 py-2 outline-none" />
-            <button type="submit" className="self-end mt-4 text-sm uppercase tracking-wide border-b-2 border-green-400">
-                Send Message
-            </button>
+            <div className="flex flex-col items-center self-end mt-4 text-sm uppercase tracking-wide">
+                <button type="submit">
+                    SEND MESSAGE
+                </button>
+                <div className="h-[1px] bg-green-400 w-full mt-2"></div>
+            </div>
         </form>
     );
 }
