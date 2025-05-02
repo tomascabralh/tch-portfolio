@@ -97,7 +97,7 @@ export default function Form() {
             </div>
 
             <div className="flex flex-col items-center self-end mt-4 text-sm uppercase tracking-wide">
-                <button type="submit" className="text-green-400 hover:text-green-500">
+                <button type="submit" className="text-white-400 hover:text-green-500 duration-500">
                     SEND MESSAGE
                 </button>
                 <div className="h-[1px] bg-green-400 w-full mt-2"></div>

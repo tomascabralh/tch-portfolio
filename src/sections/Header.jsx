@@ -4,7 +4,7 @@ import Hero from './Hero';
 const Header = ({ backgroundColor }) => {
     return (
         <header className="relative">
-            <NavigationBar backgroundColor={backgroundColor} />
+            <NavigationBar backgroundColor={backgroundColor} shouldHaveMargin />
             <Hero />
         </header>
     );

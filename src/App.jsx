@@ -9,11 +9,15 @@ import Header from './sections/Header'
 function App() {
   return (
     <>
-      <Header />
-      <Skills />
-      <Projects />
-      <Contact />
-      <NavigationBar backgroundColor='grey' />
+      <div className='lg:max-w-[1440px] lg:mx-auto'>
+        <Header />
+        <Skills />
+        <Projects />
+      </div>
+      <div className='bg-[#242424]'>
+        <Contact />
+        <NavigationBar />
+      </div>
     </>
   )
 }
