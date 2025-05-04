@@ -2,7 +2,7 @@ import Form from "../components/Form";
 
 export default function Contact() {
     return (
-        <section className="lg:max-w-[1440px] lg:mx-auto text-white">
+        <section id='contact' className="lg:max-w-[1440px] lg:mx-auto text-white">
             <div className="flex flex-col lg:flex-row items-center lg:items-start px-4 md:px-[160px] pt-[60px] text-center lg:text-left pb-[90px]">
                 <div className="flex-1 lg:pr-[220px]">
                     <h2 className="text-[40px] md:text-[72px] font-bold mb-4">Contact</h2>

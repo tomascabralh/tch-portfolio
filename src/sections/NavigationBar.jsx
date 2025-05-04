@@ -1,9 +1,9 @@
 import React from 'react'
 
-const NavigationBar = ({ shouldHaveMargin }) => {
+const NavigationBar = () => {
     return (
         <section className='lg:max-w-[1440px] lg:mx-auto'>
-            <nav className={`flex flex-col md:flex-row md:justify-between justify-center items-center py-6 px-4 lg:px-0 ${shouldHaveMargin ? 'lg:mx-[160px]' : 'lg:px-[160px]'}`}>
+            <nav className={`flex flex-col md:flex-row md:justify-between justify-center items-center py-6 px-4 lg:px-0 lg:px-[160px]`}>
                 <p className="text-[24px] font-bold pb-[20px] md:pb-0">tomascabral</p>
                 <div className="flex gap-x-[25px] z-10">
                     <a href="https://github.com/tomascabralh" target='_blank' aria-label="GitHub"><svg className="text-white hover:text-green-400 transition-colors duration-500" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">

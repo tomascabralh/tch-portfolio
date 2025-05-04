@@ -1,10 +1,10 @@
 import NavigationBar from './NavigationBar';
 import Hero from './Hero';
 
-const Header = ({ backgroundColor }) => {
+const Header = () => {
     return (
         <header className="relative">
-            <NavigationBar backgroundColor={backgroundColor} shouldHaveMargin />
+            <NavigationBar />
             <Hero />
         </header>
     );
