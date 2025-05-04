@@ -1,12 +1,8 @@
----
-
 # tch-portfolio
 
 A sleek and responsive developer portfolio built with **React**, **Vite**, and **Tailwind CSS**. This project showcases your skills, projects, and experience in a modern, minimalist design.
 
 🔗 **Live Demo**: [tch-portfolio-black.vercel.app](https://tch-portfolio-black.vercel.app)
-
----
 
 ## 🚀 Features
 
