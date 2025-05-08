@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
+import Button from './Button';
 
 export default function Form() {
     const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -97,10 +98,7 @@ export default function Form() {
             </div>
 
             <div className="flex flex-col items-center self-end mt-4 text-sm uppercase tracking-wide">
-                <button type="submit" className="text-white-400 hover:text-green-500 duration-500">
-                    SEND MESSAGE
-                </button>
-                <div className="h-[1px] bg-green-400 w-full mt-2"></div>
+                <Button>SEND MESSAGE</Button>
             </div>
         </form>
     );
