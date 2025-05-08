@@ -1,11 +1,10 @@
 import { Helmet } from 'react-helmet';
 import './index.css'
-import Hero from './sections/Hero'
 import Projects from './sections/Projects'
 import Skills from './sections/Skills'
 import Contact from './sections/Contact'
 import NavigationBar from './sections/NavigationBar'
-import Header from './sections/Header'
+import Landing from './sections/Landing'
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
 
       <main>
         <div className='lg:max-w-[1440px] lg:mx-auto'>
-          <Header />
+          <Landing />
           <Skills />
           <Projects />
         </div>
