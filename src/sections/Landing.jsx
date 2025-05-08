@@ -1,7 +1,7 @@
 import NavigationBar from './NavigationBar';
 import Hero from './Hero';
 
-const Header = () => {
+const Landing = () => {
     return (
         <header className="relative">
             <NavigationBar />
@@ -10,4 +10,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Landing;

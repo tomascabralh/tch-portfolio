@@ -1,12 +1,12 @@
 const skills = [
-    { name: "HTML CSS", years: "4" },
-    { name: "Javascript", years: "4" },
-    { name: "Typescript", years: "4" },
-    { name: "React", years: "4" },
-    { name: "Next", years: "2" },
-    { name: "Redux", years: "3" },
-    { name: "Testing", years: "4" },
-    { name: "Git/Github", years: "4" },
+    { name: "HTML CSS", years: "4+" },
+    { name: "Javascript", years: "4+" },
+    { name: "Typescript", years: "4+" },
+    { name: "React", years: "4+" },
+    { name: "Next", years: "2+" },
+    { name: "Redux", years: "2+" },
+    { name: "Testing", years: "4+" },
+    { name: "Git/Github", years: "4+" },
 ];
 
 export default function Skills() {

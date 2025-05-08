@@ -3,14 +3,14 @@ import ProjectCard from "../components/ProjectCard";
 const projectsData = [
     {
         title: "LA NACION",
-        skills: ["HTML", "CSS", "REACT", "JAVASCRIPT"],
+        skills: ["REACT"],
         imageUrl: "/images/ln.png",
         codeUrl: null,
         liveUrl: "www.lanacion.com",
     },
     {
         title: "INDICIUS",
-        skills: ["HTML", "CSS", "REACT", "JAVASCRIPT"],
+        skills: ["REACT"],
         imageUrl: "/images/indicius.png",
         codeUrl: null,
         liveUrl: "www.indicius.com",
