@@ -98,7 +98,7 @@ export default function Form() {
             </div>
 
             <div className="flex flex-col items-center self-end mt-4 text-sm uppercase tracking-wide">
-                <Button>SEND MESSAGE</Button>
+                <Button type="submit">SEND MESSAGE</Button>
             </div>
         </form>
     );
