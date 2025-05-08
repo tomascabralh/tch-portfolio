@@ -1,5 +1,4 @@
 import Title from "../components/Title";
-import Subtitle from "../components/Subtitle";
 import Button from "../components/Button";
 
 export default function Hero() {
@@ -10,11 +9,11 @@ export default function Hero() {
                     Nice to meet you!
                 </Title>
                 <Title>
-                    I’m <span className="underline underline-offset-4 decoration-[#4EE1A0]">Tomas Cabral.</span>
+                    I'm <span className="underline underline-offset-4 decoration-[#4EE1A0]">Tomas Cabral.</span>
                 </Title>
-                <Subtitle>
-                    Based in Argentina, I’m a front-end developer, focused on building solid web apps and always exploring new techs.
-                </Subtitle>
+                <p className='text-center md:text-[18px] md:text-left md:max-w-[400px] font-light text-[#D9D9D9] pt-[24px]'>
+                    Based in Argentina, I'm a front-end developer, focused on building solid web apps and always exploring new techs.
+                </p>
                 <a href="#contact">
                     <Button>CONTACT ME</Button>
                 </a>

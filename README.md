@@ -6,19 +6,22 @@ A sleek and responsive developer portfolio built with **React**, **Vite**, and *
 
 ## 🚀 Features
 
-* ⚡️ **Fast and Lightweight**: Powered by Vite for rapid development and optimized builds.
-* 🎨 **Modern UI**: Styled with Tailwind CSS for a clean and responsive design.
-* 🧩 **Modular Components**: Organized React components for easy customization.
-* 📱 **Responsive Design**: Optimized for all devices and screen sizes.
+- ⚡️ **Fast and Lightweight**: Powered by Vite for rapid development and optimized builds.
+- 🎨 **Modern UI**: Styled with Tailwind CSS for a clean and responsive design.
+- 🧩 **Modular Components**: Organized React components for easy customization.
+- 📱 **Responsive Design**: Optimized for all devices and screen sizes.
+- 📦 **Data Management**: Content managed through a centralized JSON file.
+- 🎯 **Reusable Components**: Custom components like Title and Button for consistent styling.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Framework**: React
-* **Build Tool**: Vite
-* **Styling**: Tailwind CSS
-* **Deployment**: Vercel
+- **Framework**: React
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Deployment**: Vercel
+- **Email Service**: EmailJS
 
 ---
 
@@ -54,21 +57,32 @@ tch-portfolio/
 ├── public/             # Static assets
 ├── src/
 │   ├── components/     # Reusable React components
-│   ├── pages/          # Page components
-│   ├── App.jsx         # Main application component
-│   └── main.jsx        # Entry point
-├── tailwind.config.js  # Tailwind CSS configuration
-├── vite.config.js      # Vite configuration
-└── package.json        # Project metadata and scripts
+│   │   ├── Button.jsx  # Custom button component
+│   │   ├── Form.jsx    # Contact form component
+│   │   ├── Title.jsx   # Custom title component
+│   │   └── ...
+│   ├── sections/       # Page sections
+│   │   ├── Contact.jsx # Contact section
+│   │   ├── Hero.jsx    # Hero section
+│   │   ├── Projects.jsx# Projects section
+│   │   └── ...
+│   ├── data/          # Content management
+│   │   └── content.json# Skills and projects data
+│   ├── App.jsx        # Main application component
+│   └── main.jsx       # Entry point
+├── tailwind.config.js # Tailwind CSS configuration
+├── vite.config.js     # Vite configuration
+└── package.json       # Project metadata and scripts
 ```
 
 ---
 
 ## ⚙️ Customization
 
-* **Profile Information**: Update your personal details, skills, and experiences in the respective components within the `src/components/` directory.
-* **Projects**: Add or modify your projects in the `Projects` component to showcase your work.
-* **Styling**: Customize the theme and styles by editing `tailwind.config.js` and the CSS classes in your components.
+- **Content Management**: Update your skills and projects in `src/data/content.json`
+- **Profile Information**: Update your personal details in the respective components
+- **Styling**: Customize the theme and styles by editing `tailwind.config.js`
+- **Components**: Modify or extend the reusable components in `src/components/`
 
 ---
 
@@ -76,13 +90,12 @@ tch-portfolio/
 
 Deploy your portfolio effortlessly using [Vercel](https://vercel.com/):
 
-1. **Push your project to GitHub**.
-2. **Sign in to Vercel** and import your GitHub repository.
-3. **Configure the build settings** if necessary:
-
-   * **Framework Preset**: Vite
-   * **Build Command**: `npm run build`
-   * **Output Directory**: `dist`
+1. **Push your project to GitHub**
+2. **Sign in to Vercel** and import your GitHub repository
+3. **Configure the build settings**:
+   - **Framework Preset**: Vite
+   - **Build Command**: `npm run build`
+   - **Output Directory**: `dist`
 4. **Deploy** your site and share your portfolio with the world!
 
 ---

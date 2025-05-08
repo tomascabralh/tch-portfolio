@@ -8,11 +8,11 @@ export default function Form() {
 
     const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-    const errors = {
+    const getErrors = () => ({
         name: touched.name && !form.name.trim(),
         email: touched.email && !validateEmail(form.email),
         message: touched.message && !form.message.trim(),
-    };
+    });
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
@@ -26,35 +26,47 @@ export default function Form() {
         e.preventDefault();
         setTouched({ name: true, email: true, message: true });
 
-        if (!errors.name && !errors.email && !errors.message) {
-            emailjs.send(
-                import.meta.env.VITE_EMAILJS_SERVICE_ID,
-                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-                {
-                    name: form.name,
-                    email: form.email,
-                    message: form.message,
-                },
-                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-            )
-                .then(() => {
-                    alert('Message sent!');
-                    setForm({ name: '', email: '', message: '' });
-                    setTouched({ name: false, email: false, message: false });
-                })
-                .catch(() => {
-                    alert('Failed to send message.');
-                });
+        const errors = getErrors();
+        const hasErrors = Object.values(errors).some(error => error);
+
+        if (hasErrors) {
+            return;
         }
+
+        if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+            return;
+        }
+
+        emailjs.send(
+            import.meta.env.VITE_EMAILJS_SERVICE_ID,
+            import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+            {
+                name: form.name,
+                email: form.email,
+                message: form.message,
+            },
+            import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        )
+            .then(() => {
+                alert('Message sent!');
+                setForm({ name: '', email: '', message: '' });
+                setTouched({ name: false, email: false, message: false });
+            })
+            .catch(() => {
+                alert('Failed to send message.');
+            });
     };
 
     const getInputClasses = (field) => {
         const base = 'bg-transparent border-b py-2 outline-none transition-colors w-full autofill:shadow-[inset_0_0_0_1000px_#242424] autofill:text-white';
         const focus = 'focus:border-green-400';
+        const errors = getErrors();
         if (errors[field]) return `${base} border-red-500 ${focus}`;
         if (touched[field]) return `${base} border-green-400 ${focus}`;
         return `${base} border-gray-600 ${focus}`;
     };
+
+    const errors = getErrors();
 
     return (
         <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full text-white">

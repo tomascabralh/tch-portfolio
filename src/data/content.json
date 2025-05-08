@@ -1,0 +1,28 @@
+{
+  "skills": [
+    { "name": "HTML CSS", "years": "4+" },
+    { "name": "Javascript", "years": "4+" },
+    { "name": "Typescript", "years": "4+" },
+    { "name": "React", "years": "4+" },
+    { "name": "Next", "years": "2+" },
+    { "name": "Redux", "years": "2+" },
+    { "name": "Testing", "years": "4+" },
+    { "name": "Git/Github", "years": "4+" }
+  ],
+  "projects": [
+    {
+      "title": "LA NACION",
+      "skills": ["REACT"],
+      "imageUrl": "/images/ln.png",
+      "codeUrl": null,
+      "liveUrl": "https://www.lanacion.com"
+    },
+    {
+      "title": "INDICIUS",
+      "skills": ["REACT"],
+      "imageUrl": "/images/indicius.png",
+      "codeUrl": null,
+      "liveUrl": "https://www.indicius.com"
+    }
+  ]
+}

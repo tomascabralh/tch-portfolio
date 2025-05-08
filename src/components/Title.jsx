@@ -1,8 +1,20 @@
 import React from 'react'
 
-const Title = ({ children }) => {
+const Title = ({ children, size = "large", align = "left" }) => {
+    const sizeClasses = {
+        large: 'text-[40px] md:text-[72px]',
+        medium: 'text-[32px] md:text-[48px]',
+        small: 'text-[24px] md:text-[32px]'
+    };
+
+    const alignClasses = {
+        left: 'text-left',
+        center: 'text-center',
+        right: 'text-right'
+    };
+
     return (
-        <div className='text-[40px] md:text-[72px] md:max-w-[500px] lg:max-w-full text-[#FFFFFF] font-semibold'>
+        <div className={`${sizeClasses[size]} ${alignClasses[align]} text-[#FFFFFF] font-semibold`}>
             {children}
         </div>
     )
