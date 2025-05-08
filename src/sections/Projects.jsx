@@ -6,14 +6,14 @@ const projectsData = [
         skills: ["REACT"],
         imageUrl: "/images/ln.png",
         codeUrl: null,
-        liveUrl: "www.lanacion.com",
+        liveUrl: "https://www.lanacion.com",
     },
     {
         title: "INDICIUS",
         skills: ["REACT"],
         imageUrl: "/images/indicius.png",
         codeUrl: null,
-        liveUrl: "www.indicius.com",
+        liveUrl: "https://www.indicius.com",
     }
 ];
 
