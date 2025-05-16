@@ -5,6 +5,7 @@ import Skills from './sections/Skills'
 import Contact from './sections/Contact'
 import NavigationBar from './sections/NavigationBar'
 import Landing from './sections/Landing'
+import Experience from './sections/Experience'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <div className='lg:max-w-[1440px] lg:mx-auto'>
           <Landing />
           <Skills />
+          <Experience />
           <Projects />
         </div>
         <footer className='bg-[#242424]'>

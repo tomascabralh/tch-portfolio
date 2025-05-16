@@ -11,18 +11,52 @@
   ],
   "projects": [
     {
-      "title": "LA NACION",
-      "skills": ["REACT"],
-      "imageUrl": "/images/ln.png",
+      "title": "PORTFOLIO",
+      "skills": ["REACT", "TAILWIND", "JAVASCRIPT"],
+      "imageUrl": "/images/portfolio.png",
       "codeUrl": null,
+      "liveUrl": null
+    },
+    {
+      "title": "AUDIOPHILE (WIP)",
+      "skills": ["REACT", "NEXT", "TAILWIND"],
+      "imageUrl": "/images/audiophile.png",
+      "codeUrl": null,
+      "liveUrl": null
+    }
+  ],
+  "experience": [
+    {
+      "title": "LA NACION",
+      "skills": ["REACT", "NEXT", "TYPESCRIPT", "REDUX"],
+      "imageUrl": "/images/lanacion.png",
+      "description": "Senior Frontend Developer at LA NACION, working on the main news platform and internal tools.",
+      "period": "December 2021 - April 2025",
       "liveUrl": "https://www.lanacion.com"
     },
     {
       "title": "INDICIUS",
-      "skills": ["REACT"],
+      "skills": ["REACT", "NEXT", "GATSBY", "ASTRO"],
       "imageUrl": "/images/indicius.png",
-      "codeUrl": null,
+      "description": "Frontend Developer at INDICIUS, developing web applications for various clients.",
+      "period": "May 2024 - Present",
       "liveUrl": "https://www.indicius.com"
+    },
+    {
+      "title": "FIERA",
+      "skills": ["REACT", "NEXT", "TYPESCRIPT"],
+      "imageUrl": "/images/fiera.png",
+      "description": "Frontend Developer at Fiera Studio, creating modern and responsive web applications for clients in the creative industry.",
+      "period": "May 2021 - December 2021",
+      "liveUrl": "https://www.fierastudio.com/"
+    },
+    {
+      "title": "ARKSOFT",
+      "skills": ["NODEJS", "REACT"],
+      "imageUrl": "/images/arksoft.png",
+      "description": "Full Stack Developer at Arksoft, working on both frontend and backend development of web applications and APIs.",
+      "period": "November 2020 - May 2021",
+      "liveUrl": "https://www.arksoft.ar/"
     }
   ]
 }

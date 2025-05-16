@@ -8,7 +8,7 @@ const Title = ({ children, size = "large", align = "left" }) => {
     };
 
     const alignClasses = {
-        left: 'text-left',
+        left: 'text-left md:text-center lg:text-left',
         center: 'text-center',
         right: 'text-right'
     };
