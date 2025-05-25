@@ -2,7 +2,7 @@ import React from 'react'
 
 const Title = ({ children, size = "large", align = "left" }) => {
     const sizeClasses = {
-        large: 'text-[40px] md:text-[72px]',
+        large: 'text-[40px] md:text-[60px]',
         medium: 'text-[32px] md:text-[48px]',
         small: 'text-[24px] md:text-[32px]'
     };
