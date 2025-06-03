@@ -34,12 +34,12 @@ const InfoCard = ({ title, imageUrl, skills, codeUrl, liveUrl, isExperience, des
                 {isExperience && period && (
                     <p className="text-[#D9D9D9] font-light mb-2">{period}</p>
                 )}
-                <h2 className='flex'>{skills.map((skill, index) => (
+                {/*                 <h2 className='flex'>{skills.map((skill, index) => (
                     <span key={index} className="flex items-center text-[#D9D9D9] font-extralight">
                         {skill}
                         {index !== skills.length - 1 && <span className="mx-2">-</span>}
                     </span>
-                ))}</h2>
+                ))}</h2> */}
             </div>
             <div className="flex gap-4 font-semibold tracking-[2.3px] md:hidden">
                 {liveUrl && (

@@ -1,13 +1,17 @@
 {
   "skills": [
-    { "name": "HTML CSS", "years": "4+" },
-    { "name": "Javascript", "years": "4+" },
-    { "name": "Typescript", "years": "4+" },
-    { "name": "React", "years": "4+" },
+    { "name": "HTML/CSS", "years": "5+" },
+    { "name": "Javascript", "years": "5+" },
+    { "name": "Typescript", "years": "5+" },
+    { "name": "React", "years": "5+" },
+    { "name": "Node", "years": "3+" },
+    { "name": "Express", "years": "3+" },
+    { "name": "MongoDB", "years": "3+" },
+    { "name": "AWS", "years": "2+" },
     { "name": "Next", "years": "2+" },
     { "name": "Redux", "years": "2+" },
-    { "name": "Testing", "years": "4+" },
-    { "name": "Git/Github", "years": "4+" }
+    { "name": "Testing", "years": "5+" },
+    { "name": "Git/Github", "years": "5+" }
   ],
   "projects": [
     {
@@ -28,7 +32,7 @@
   "experience": [
     {
       "title": "LA NACION",
-      "skills": ["REACT", "NEXT", "TYPESCRIPT", "REDUX"],
+      "skills": ["REACT", "NEXT", "TYPESCRIPT", "REDUX", "NODE"],
       "imageUrl": "/images/lanacion.png",
       "description": "Senior Frontend Developer at LA NACION, working on the main news platform and internal tools.",
       "period": "December 2021 - April 2025",
@@ -36,10 +40,10 @@
     },
     {
       "title": "INDICIUS",
-      "skills": ["REACT", "NEXT", "GATSBY", "ASTRO"],
+      "skills": ["REACT", "NEXT", "GATSBY", "ASTRO", "NODE"],
       "imageUrl": "/images/indicius.png",
       "description": "Frontend Developer at INDICIUS, developing web applications for various clients.",
-      "period": "May 2024 - Present",
+      "period": "May 2024 - June 2025",
       "liveUrl": "https://www.indicius.com"
     },
     {
